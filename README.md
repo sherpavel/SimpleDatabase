@@ -1,8 +1,8 @@
 # Simple Database ![GitHub](https://img.shields.io/badge/jdk-%3E%3D%201.8-brightgreen?style=flat-square) ![GitHub](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 > Simple, thread safe database library with embedded file manager and logging functionality.  
 
-## Table of contents
 
+## Table of contents
 * [General info](#general-info)
 * [Database structure](#database-file-structure)
 * [Setup](#setup)
@@ -13,12 +13,10 @@
 
 
 ## General info
-
 This project's aims is to simplify the setup and use of a local database. The library is thread safe and easy to use. It automatically logs every change (in `.sddata\log.dat`) and updates them on file-level.
 
 
 ## Database file structure
-
 ![file structure](./images/fs.png)
 >`.sddata` - is a unique folder that keeps all the relevant information about the database (__Do not delete__, otherwise database will __not__ be recognized on `connect` call).  
 >`log.dat` - Log files, keeps track of all the changes withing the database.  
@@ -27,7 +25,6 @@ This project's aims is to simplify the setup and use of a local database. The li
 
 
 ## Setup
-
 ### Method 1
 1. Download `SimpleDatabase.jar`
 2. In your IDE locate a setting for adding external .jar file
@@ -41,7 +38,6 @@ This project's aims is to simplify the setup and use of a local database. The li
 
 
 ## Code Examples
-
 ### Creating new database 
 Create a database named `Example Database` in your project's root folder:  
 `Database exampleDatabase = Database.create("Example Database")`  
@@ -85,14 +81,12 @@ someDatabase.add(entry);
 
 
 ## Features
-
 * Simple and intuitive methods
 * Complete file management automation
 * Thread safety
 
 
 ## Status
-
 ###Project is _in progress_
 ### Todo list
 * Improve file management between threads
@@ -100,5 +94,4 @@ someDatabase.add(entry);
 
 
 ## Contact
-
 Created by [@sherpavel](https://www.linkedin.com/in/sherpavel/) - feel free to contact me!
